@@ -2,7 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	.button {
+		@apply px-3 py-2 rounded-lg bg-[#4F54A7] text-white text-sm font-bold font-sans transition-all hover:bg-[#293684];
+	}
+
+	.secondary-button {
+		@apply px-3 py-2 rounded-lg bg-white bg-opacity-80 text-[#4F54A7] text-sm font-bold font-sans transition-all hover:text-[#293684] hover:bg-opacity-100;
+	}
+
+	.state-card {
+		@apply flex flex-col items-center gap-4 p-4;
+	}
+
+	.title {
+		@apply text-xl m-0;
+	}
+
+	.text {
+		@apply text-base my-1 w-full text-left;
+	}
+
+	.input {
+		@apply text-base w-full p-2 rounded-lg;
+	}
+
+	.ticket {
+		@apply grid px-4;
+		grid-template-columns: 1fr 5fr;
+	}
+
+	.ticket-country {
+		@apply flex justify-center items-center bg-white p-4 rounded-r-lg rounded-l-md border-r-2 border-dashed border-[#4f54a7] text-sm font-bold uppercase;
+	}
+
+	.ticket-passenger {
+		@apply flex justify-center items-center bg-[#9795f0] bg-opacity-50 p-4 rounded-r-md rounded-l-lg border-l-2 border-dashed border-[#4f54a7] font-bold;
+	}
+}
+
 #root {
 	width: 100%;
 	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
