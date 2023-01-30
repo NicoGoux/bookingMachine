@@ -1,36 +1,38 @@
 {
-  "name": "xstate",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@xstate/react": "^3.0.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.57.1",
-    "xstate": "^4.35.2"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.9",
-    "@vitejs/plugin-react": "^3.0.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.0"
-  },
-  "description": "xstate course",
-  "main": "vite.config.js",
-  "keywords": [
-    "Javascript",
-    "React",
-    "XState"
-  ],
-  "author": "Nicolas Goux <nicolsagoux2000@gmail.com>",
-  "license": "MIT"
+	"name": "xstate",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "./deploy.sh"
+	},
+	"dependencies": {
+		"@xstate/react": "^3.0.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sass": "^1.57.1",
+		"xstate": "^4.35.2"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.26",
+		"@types/react-dom": "^18.0.9",
+		"@vitejs/plugin-react": "^3.0.0",
+		"autoprefixer": "^10.4.13",
+		"postcss": "^8.4.21",
+		"tailwindcss": "^3.2.4",
+		"vite": "^4.0.0"
+	},
+	"description": "xstate course",
+	"main": "vite.config.js",
+	"keywords": [
+		"Javascript",
+		"React",
+		"XState"
+	],
+	"author": "Nicolas Goux <nicolsagoux2000@gmail.com>",
+	"license": "MIT",
+	"base": "/bookingMachine/"
 }

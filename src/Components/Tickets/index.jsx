@@ -9,7 +9,7 @@ function Tickets({send, context}) {
 		<div className='state-card'>
 			<p className=''>Gracias por volar con book a fly 💚</p>
 			<div className='ticket'>
-				<div className='ticket-country'>Colombia</div>
+				<div className='ticket-country'>{context.selectedCountry}</div>
 				<div className='ticket-passenger'>
 					<div>
 						{context.passengers.map((passenger, index) => (
